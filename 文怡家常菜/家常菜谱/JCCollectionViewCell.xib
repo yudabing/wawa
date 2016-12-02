@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1912" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JCCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="146" height="191"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RHA-bF-fti">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="191"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C77.png" translatesAutoresizingMaskIntoConstraints="NO" id="lLE-hv-x1I">
+                        <rect key="frame" x="40" y="8" width="106" height="27"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPD-pr-dCU">
+                        <rect key="frame" x="52" y="8" width="94" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RHA-bF-fti" secondAttribute="bottom" id="1nb-cZ-rkY"/>
+                <constraint firstAttribute="bottom" secondItem="WPD-pr-dCU" secondAttribute="bottom" constant="156" id="7uU-1g-C3R"/>
+                <constraint firstItem="RHA-bF-fti" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AZF-Ou-8mw"/>
+                <constraint firstItem="WPD-pr-dCU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="52" id="HZi-7K-hcc"/>
+                <constraint firstItem="lLE-hv-x1I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="Io9-Kn-cff"/>
+                <constraint firstItem="RHA-bF-fti" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O0K-Wz-uIs"/>
+                <constraint firstAttribute="bottom" secondItem="lLE-hv-x1I" secondAttribute="bottom" constant="156" id="Wvl-d2-lpg"/>
+                <constraint firstItem="WPD-pr-dCU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="52" id="ZiX-wo-qbL"/>
+                <constraint firstItem="lLE-hv-x1I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="eNL-Qh-JUO"/>
+                <constraint firstItem="WPD-pr-dCU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="gJ8-aX-EBU"/>
+                <constraint firstAttribute="trailing" secondItem="WPD-pr-dCU" secondAttribute="trailing" id="gNm-bB-sw3"/>
+                <constraint firstAttribute="trailing" secondItem="RHA-bF-fti" secondAttribute="trailing" id="u3O-jj-KWP"/>
+                <constraint firstAttribute="trailing" secondItem="lLE-hv-x1I" secondAttribute="trailing" id="vC4-Bq-LeO"/>
+                <constraint firstAttribute="trailing" secondItem="WPD-pr-dCU" secondAttribute="trailing" id="vcl-Qd-MeX"/>
+                <constraint firstAttribute="bottom" secondItem="WPD-pr-dCU" secondAttribute="bottom" constant="156" id="yQ3-c0-PRg"/>
+                <constraint firstItem="WPD-pr-dCU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="yQ7-59-C15"/>
+            </constraints>
+            <size key="customSize" width="146" height="191"/>
+            <connections>
+                <outlet property="imageView" destination="RHA-bF-fti" id="Xd1-GO-zt5"/>
+                <outlet property="label" destination="WPD-pr-dCU" id="rws-vq-oUL"/>
+            </connections>
+            <point key="canvasLocation" x="234" y="251.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="C77.png" width="210" height="30"/>
+    </resources>
+</document>

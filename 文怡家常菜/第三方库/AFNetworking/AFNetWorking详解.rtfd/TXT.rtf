@@ -1,0 +1,693 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green121\blue165;\red168\green24\blue75;\red103\green29\blue0;
+\red0\green116\blue0;\red100\green56\blue32;\red196\green26\blue22;\red52\green52\blue52;\red92\green38\blue153;
+\red46\green13\blue110;\red170\green13\blue145;\red28\green0\blue207;\red41\green0\blue130;\red100\green14\blue47;
+\red128\green64\blue0;\red100\green100\blue133;\red223\green7\blue0;\red41\green66\blue119;\red180\green69\blue0;
+\red71\green106\blue151;\red195\green116\blue28;\red163\green21\blue21;\red115\green0\blue109;\red191\green51\blue78;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25100\viewh12920\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc
+
+\f0\fs80 \cf2 ===========================\
+ \cf3 SNS
+\f1 \'c9\'e7\'c7\'f8\'cf\'ee\'c4\'bf\'ba\'cd
+\f0 POST
+\f1 \'c9\'cf\'b4\'ab\cf2 \
+==========================
+\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf2 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b \cf4 post\'ba\'cdget\'b5\'c4\'c7\'f8\'b1\'f0\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f2\b0 \cf5 \CocoaLigature0 /*(http)get
+\f1 \'c7\'eb\'c7\'f3\'ba\'cd
+\f2 post
+\f1 \'c7\'eb\'c7\'f3\'b5\'c4\'c7\'f8\'b1\'f0
+\f2 :\
+ *1
+\f1 \'a1\'a2
+\f2 post
+\f1 \'c7\'eb\'c7\'f3
+\f2  
+\f1 \'c7\'eb\'c7\'f3\'b5\'d8\'d6\'b7\'ba\'cd\'b2\'ce\'ca\'fd\'b7\'d6\'c0\'eb\'a3\'ac\'b1\'c8
+\f2 get
+\f1 \'b8\'fc\'bc\'d3\'b0\'b2\'c8\'ab   get\'c7\'eb\'c7\'f3\'b5\'c4\'b2\'ce\'ca\'fd \'d6\'b1\'bd\'d3\'b1\'a9\'c2\'a9\'d4\'da\'cd\'e2\'c3\'e6 \'b2\'bb\'b0\'b2\'c8\'ab
+\f2 \
+ *2
+\f1 \'a1\'a2
+\f2 get
+\f1 \'c7\'eb\'c7\'f3\'d6\'bb\'c4\'dc\'bb\'f1\'c8\'a1\'b7\'fe\'ce\'f1\'c6\'f7\'b5\'c4\'ca\'fd\'be\'dd(\'cf\'c2\'d4\'d8\'ca\'fd\'be\'dd/\'cc\'e1\'bd\'bb\'b2\'ce\'ca\'fd) \'b2\'bb\'c4\'dc\'c9\'cf\'b4\'ab\'ce\'c4\'bc\'fe\'a3\'ac\'b6\'f8
+\f2 post
+\f1 \'c1\'bd\'d5\'df\'b6\'bc\'bf\'c9\'d2\'d4
+\f2 \
+ *3
+\f1 \'a1\'a2
+\f2 get
+\f1 \'c7\'eb\'c7\'f3\'d4\'da\'e4\'af\'c0\'c0\'c6\'f7\'d6\'d0\'d7\'d6\'b7\'fb\'b4\'ae\'b3\'a4\'b6\'c8\'d7\'ee\'b4\'f3\'cf\'de\'d6\'c6\'ce\'aa
+\f2 1024,post 
+\f1 \'c3\'bb\'d3\'d0\'cf\'de\'d6\'c6
+\f2 \
+ *4
+\f1 \'a1\'a2
+\f2 post 
+\f1 \'c9\'cf\'b4\'ab\'ce\'c4\'bc\'fe
+\f2  
+\f1 \'ce\'c4\'bc\'fe\'b4\'f3\'d0\'a1\'b2\'bb\'c4\'dc\'b3\'ac\'b9\'fd
+\f2 4G\
+ *5
+\f1 \'a1\'a2
+\f2 get
+\f1 \'c7\'eb\'c7\'f3
+\f2  NSURLConnetion 
+\f1 \'c7\'eb\'c7\'f3\'cf\'c2\'c0\'b4\'b5\'c4\'ca\'fd\'be\'dd\'a3\'ac
+\f2 NSURLConnection 
+\f1 \'bb\'e1\'d7\'f6\'d2\'bb\'b6\'a8\'b5\'c4\'ca\'fd\'be\'dd\'bb\'ba\'b4\'e6\'a3\'ac
+\f2 post
+\f1 \'c7\'eb\'c7\'f3\'a3\'ac\'c7\'eb\'c7\'f3\'cf\'c2\'c0\'b4\'b5\'c4\'ca\'fd\'be\'dd
+\f2 NSURLConnection
+\f1 \'b2\'bb\'d7\'f6\'ca\'fd\'be\'dd\'bb\'ba\'b4\'e6
+\f2 \
+ */\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf6 #define LOGIN_URL @\cf7 "http://10.0.8.8/sns/my/login.php?\
+username=Tony111&password=123\'94\cf6 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f1\b \cf4 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf2 \
+\pard\pardeftab720\sa260
+
+\b \cf8 \shad\shadx20\shady-20\shadr0\shado255 \shadc0 \'b3\'a3\'bc\'fb\'b5\'c4
+\f0  POST 
+\f1 \'cc\'e1\'bd\'bb\'ca\'fd\'be\'dd\'b7\'bd\'ca\'bd  body\'c7\'eb\'c7\'f3\'cc\'e5\
+\'cc\'e1\'bd\'bb\'b1\'ed\'b5\'a5\shad0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf8 1.
+\f0 application/json  
+\f1 \'b2\'ce\'ca\'fd
+\f0  
+\f1 \'ca\'c7
+\f0 json 
+\f1 \'b8\'f1\'ca\'bd
+\f0 \
+2.text/xml 
+\f1 \'b2\'ce\'ca\'fd\'ca\'c7
+\f0 xml
+\f1 \'b8\'f1\'ca\'bd\
+\
+<info>\
+<userName>tony</userName>\
+<psw>123</psw>\
+</info>\
+\
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f2\b0 \cf5 \CocoaLigature0 // 
+\f1 \'c7\'eb\'c7\'f3\'d3\'c3\'bf\'c9\'b1\'e4\'b5\'c4
+\f2 ,
+\f1 \'c4\'dc\'b9\'bb\'c5\'e4\'d6\'c3\'c7\'eb\'c7\'f3\'cd\'b7\'a1\'a2\'c7\'eb\'c7\'f3\'cc\'e5\'ba\'cd\'c7\'eb\'c7\'f3\'b7\'bd\'b7\'a8
+\f2 \cf0 \
+\cf5 // 
+\f1 \'c7\'eb\'c7\'f3\'b5\'d8\'d6\'b7\'c4\'ac\'c8\'cf\'d7\'f7\'ce\'aa\'c7\'eb\'c7\'f3\'cd\'b7\'b5\'c4\'d0\'c5\'cf\'a2
+\f2 \cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf9 NSMutableURLRequest\cf0  *request = [\cf9 NSMutableURLRequest\cf0  \cf10 requestWithURL\cf0 :url];\
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 // 
+\f1 \'c9\'e8\'d6\'c3\'c7\'eb\'c7\'f3\'b7\'bd\'ca\'bd
+\f2  (GET/POST)\cf0 \
+[request \cf10 setHTTPMethod\cf0 :@\'93POST\'94];\
+\
+\cf5 // Content-Type (
+\f1 \'d7\'f7\'ce\'aa\'c7\'eb\'c7\'f3\'cd\'b7\'a3\'ac\'b8\'e6\'cb\'df\'b7\'fe\'ce\'f1\'c6\'f7
+\f2  
+\f1 \'c7\'eb\'c7\'f3\'cc\'e5\'b2\'ce\'ca\'fd\'b5\'c4\'d7\'e9\'d6\'af\'d0\'ce\'ca\'bd
+\f2 )\cf0 \
+[request \cf10 setValue\cf0 :type \cf10 forHTTPHeaderField\cf0 :\cf7 @"Content-Type"\cf0 ];\
+\
+\cf5 // 
+\f1 \'c6\'b4\'bd\'d3\'c7\'eb\'c7\'f3\'cc\'e5\'b2\'ce\'ca\'fd
+\f2 (urlencoded)\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf9 NSMutableString\cf0  *bodyString = [\cf9 NSMutableString\cf0  \cf10 string\cf0 ];\
+\
+?userName=tony&psw=123&QQ=1212\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 // 
+\f1 \'bf\'ec\'cb\'d9\'b1\'e9\'c0\'fa\'d7\'d6\'b5\'e4\'b5\'c4\'b7\'bd\'b7\'a8
+\f2 \cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf11 int\cf0  i = \cf12 0\cf0 ;\
+\cf11 for\cf0  (\cf9 NSString\cf0  *key \cf11 in\cf0  dic) \{\
+	\cf11 id\cf0  obj = [dic \cf10 objectForKey\cf0 :key];\
+	\cf11 if\cf0  (i==\cf12 0\cf0 ) \{\
+		[bodyString \cf10 appendFormat\cf0 :\cf7 @\'93?%@=%@\'93\cf0 ,key,obj];\
+     \} \cf11 else \cf0 \{\
+          [bodyString \cf10 appendFormat\cf0 :\cf7 @"&%@=%@"\cf0 ,key,obj];\
+     \}\
+        i++;\
+\}\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf10 NSLog\cf0 (\cf7 @"body:%@"\cf0 ,bodyString);\
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 // 
+\f1 \'bd\'ab\'b2\'ce\'ca\'fd\'d7\'aa\'bb\'af\'b3\'c9
+\f2 data\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf9 NSData\cf0  *body = [bodyString \cf10 dataUsingEncoding\cf0 :\cf10 NSUTF8StringEncoding\cf0 ];\
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 // 
+\f1 \'bd\'ab\'b2\'ce\'ca\'fd\'b5\'c4\'b3\'a4\'b6\'c8Content-Length\'d7\'f7\'ce\'aa\'c7\'eb\'c7\'f3\'cd\'b7
+\f2 \cf0 \
+[request \cf10 setValue\cf0 :[\cf9 NSString\cf0  \cf10 stringWithFormat\cf0 :\cf7 @"%ld"\cf0 , body.\cf9 length\cf0 ] \cf10 forHTTPHeaderField\cf0 :\cf7 @"Content-Length"\cf0 ];\
+    \
+\cf5 /*******************
+\f1 \'c7\'eb\'c7\'f3\'cc\'e5
+\f2 ******************/\cf0 \
+[request \cf10 setHTTPBody\cf0 :body];
+\f1\b \cf8 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf8 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf8 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf8 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\b0 \cf13 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\b \cf4 \'b6\'fe\'a1\'a2SNS \'b5\'c7\'c2\'bd\'d7\'a2\'b2\'e1\
+\pard\tx672\pardeftab672\pardirnatural
+\cf4 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f2\b0 \cf5 \CocoaLigature0 //
+\f1 \'b5\'c7\'c2\'bc\'bd\'d3\'bf\'da\'b5\'d8\'d6\'b7
+\f2 \cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf6 #define LOGIN_URL @\cf7 "http://10.0.8.8/sns/my/login.php?username=Tony111&password=123\cf6 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf0 \
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 //
+\f1 \'d7\'a2\'b2\'e1\'bd\'d3\'bf\'da\'b5\'d8\'d6\'b7
+\f2 \cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf6 #define REGISTER_URL @\cf7 "http://10.0.8.8/sns/my/register.php\'94\
+//
+\f1 \'b2\'ce\'ca\'fd
+\f2 ?username=%@&password=%@&email=%@\cf6 \
+\cf7 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 //
+\f1 \'c9\'cf\'b4\'ab\'cd\'b7\'cf\'f1
+\f2 (post)\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf6 #define kUploadImage @\cf7 "http://10.0.8.8/sns/my/upload_headimage.php"\cf6 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf5 //
+\f1 \'bb\'f1\'c8\'a1\'cf\'e0\'b2\'e1\'c1\'d0\'b1\'ed
+\f2 (post)\cf0 \
+\pard\tx1444\pardeftab1444\pardirnatural
+\cf6 #define kPhotoList @\cf7 "http://10.0.8.8/sns/my/album_list.php"\cf12 \
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f0 \cf13 \CocoaLigature1 \
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f2 \cf5 \CocoaLigature0 //
+\f1 \'bd\'ab\'d7\'d6\'b5\'e4\'d7\'aa\'bb\'af\'b3\'c9
+\f2 json\cf0 \
+            \cf9 NSDictionary\cf0  *testDic = [\cf9 NSDictionary\cf0  \cf10 dictionaryWithObjectsAndKeys\cf0 :\cf7 @"test1"\cf0 ,\cf7 @"username"\cf0 ,\cf7 @"20"\cf0 ,\cf7 @"age"\cf0 ,\cf11 nil\cf0 ];\
+            \cf10 NSLog\cf0 (\cf7 @"testDic:%@"\cf0 ,testDic);\
+            \cf5 //
+\f1 \'bd\'ab\'d7\'d6\'b5\'e4\'d7\'aa\'bb\'af\'b3\'c9
+\f2 json
+\f1 \'b5\'c4
+\f2 data\cf0 \
+            \cf9 NSData\cf0  *data = [\cf9 NSJSONSerialization\cf0  \cf10 dataWithJSONObject\cf0 :testDic \cf10 options\cf0 :\cf10 NSJSONWritingPrettyPrinted\cf0  \cf10 error\cf0 :\cf11 nil\cf0 ];\
+            \cf9 NSString\cf0  *jsonString = [[\cf9 NSString\cf0  \cf10 alloc\cf0 ] \cf10 initWithData\cf0 :data \cf10 encoding\cf0 :\cf10 NSUTF8StringEncoding\cf0 ];\
+            \cf10 NSLog\cf0 (\cf7 @"json:%@"\cf0 ,jsonString);\
+\
+\cf5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0 \cf14 \CocoaLigature1 AFNetworking
+\f1 \
+\
+\pard\tx1444\pardeftab1444\pardirnatural
+
+\f2 \cf5 \CocoaLigature0 /*\
+\
+ AFNetworking 
+\f1 \'c4\'bf\'c7\'b0\'ca\'b9\'d3\'c3\'b1\'c8\'bd\'cf\'b6\'e0\'b5\'c3\'d2\'bb\'b8\'f6\'cf\'c2\'d4\'d8\'bf\'e2
+\f2  
+\f1 \'c4\'bf\'c7\'b0\'d2\'bb\'d6\'b1\'d4\'da\'ce\'ac\'bb\'a4\'b8\'fc\'d0\'c2\'a3\'ac\'ca\'b9\'d3\'c3\'b5\'c4\'ca\'c7\'b7\'c7\'b3\'a3\'bc\'f2\'b5\'a5
+\f2  
+\f1 \'b2\'bb\'d0\'e8\'d2\'aa\'cc\'ed\'bc\'d3\'c8\'ce\'ba\'ce\'b9\'d8\'c1\'aa\'b5\'c4\'bf\'e2
+\f2 \
+ 1.
+\f1 \'b4\'f8
+\f2 block
+\f1 \'d0\'ce\'ca\'bd
+\f2  
+\f1 \'c4\'da\'b2\'bf\'ca\'c7\'c8\'ce\'ce\'f1\'b6\'d3\'c1\'d0\'bd\'f8\'d0\'d0\'cf\'c2\'d4\'d8
+\f2   
+\f1 \'be\'cd\'ca\'c7\'b6\'d4
+\f2 operation
+\f1 \'b5\'c4\'d2\'bb\'b8\'f6\'b7\'e2\'d7\'b0\'cf\'c2\'d4\'d8
+\f2 \
+ 2.
+\f1 \'bb\'b9\'b6\'d4
+\f2 uikit 
+\f1 \'c4\'da\'b2\'bf\'b5\'c4\'c0\'e0\'bd\'f8\'d0\'d0
+\f2  
+\f1 \'c0\'e0\'b1\'f0\'d0\'ce\'ca\'bd\'cc\'ed\'bc\'d3\'b7\'bd\'b7\'a8
+\f2 (
+\f1 \'d2\'ec\'b2\'bd\'cf\'c2\'d4\'d8\'cd\'bc\'c6\'ac
+\f2 )\
+ 3.
+\f1 \'bb\'b9\'bf\'c9\'d2\'d4\'bc\'ec\'b2\'e2\'cd\'f8\'c2\'e7\'d7\'b4\'cc\'ac
+\f2 \
+\
+ */
+\f0 \cf13 \CocoaLigature1 \
+
+\f2 \cf5 \CocoaLigature0 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs34 \cf15 /**\
+ *  
+\f1 \'b3\'a3\'b9\'e6\'b5\'c4
+\f0 AFN
+\f1 \'cd\'f8\'c2\'e7\'b7\'c3\'ce\'ca\'cd\'a8\'b9\'fd
+\f0 AFHTTPRequestOperationManager
+\f1 \'b6\'d4\'cf\'f3\'a3\'ba
+\f0 AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];\
+ *  AFNetworking 
+\f1 \'c4\'ac\'c8\'cf\'cc\'e1\'bd\'bb\'c7\'eb\'c7\'f3\'b5\'c4\'ca\'fd\'be\'dd\'ca\'c7\'b6\'fe\'bd\'f8\'d6\'c6\'ca\'fd\'be\'dd
+\f0 ,
+\f1 \'b7\'b5\'bb\'d8\'b8\'f1\'ca\'bd\'ca\'c7
+\f0 JSON
+\f1 \'b8\'f1\'ca\'bd\'ca\'fd\'be\'dd
+\f0 \
+ *  
+\f1 \'c8\'e7\'b9\'fb\'cc\'e1\'bd\'bb\'ca\'fd\'be\'dd\'ca\'c7
+\f0 JSON
+\f1 \'b5\'c4
+\f0 , 
+\f1 \'d0\'e8\'d2\'aa\'bd\'ab\'c7\'eb\'c7\'f3\'b8\'f1\'ca\'bd\'c9\'e8\'d6\'c3\'ce\'aa
+\f0 AFJSONRequestSerializer\
+ \
+ * 
+\f1 \'c7\'eb\'c7\'f3\'b8\'f1\'ca\'bd\'a3\'bazzzzzzzz
+\f0 \
+ * AFHTTPRequestSerializer            
+\f1 \'b6\'fe\'bd\'f8\'d6\'c6\'b8\'f1\'ca\'bd
+\f0 \
+ * AFJSONRequestSerializer            JSON\
+ * AFPropertyListRequestSerializer    PList(
+\f1 \'ca\'c7\'d2\'bb\'d6\'d6\'cc\'d8\'ca\'e2\'b5\'c4
+\f0 XML,
+\f1 \'bd\'e2\'ce\'f6\'c6\'f0\'c0\'b4\'cf\'e0\'b6\'d4\'c8\'dd\'d2\'d7
+\f0 )\
+ \
+ * 
+\f1 \'b7\'b5\'bb\'d8\'b8\'f1\'ca\'bd\'a3\'ba
+\f0 \
+ * AFHTTPResponseSerializer          
+\f1 \'b6\'fe\'bd\'f8\'d6\'c6\'b8\'f1\'ca\'bd
+\f0 \
+ * AFJSONResponseSerializer          JSON\
+ * AFXMLParserResponseSerializer     XML,
+\f1 \'d6\'bb\'c4\'dc\'b7\'b5\'bb\'d8
+\f0 XMLParser,
+\f1 \'bb\'b9\'d0\'e8\'d2\'aa\'d7\'d4\'bc\'ba\'cd\'a8\'b9\'fd\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8\'bd\'e2\'ce\'f6
+\f0 \
+ * 
+\f1 \cf13 \'c8\'e7\'b9\'fb\'b7\'fe\'ce\'f1\'b6\'cb\'b5\'c4\'cf\'ec\'d3\'a6\'cc\'e5\'b5\'c4\'b8\'f1\'ca\'bd\'ca\'c7
+\f0 application/json
+\f1 \'c4\'c7\'c3\'b4
+\f0 AFNetworking
+\f1 \'bf\'c9\'d2\'d4\'d6\'b1\'bd\'d3\'bd\'f8\'d0\'d0\'bd\'e2\'ce\'f6
+\f0 , 
+\f1 \'c8\'e7\'b9\'fb\'b2\'bb\'ca\'c7\'a3\'ac\'d2\'aa\'b6\'d4
+\f0 AFNetworking
+\f1 \'b5\'c4\'cf\'ec\'d3\'a6\'d0\'f2\'c1\'d0\'bd\'f8\'d0\'d0\'c9\'e8\'d6\'c3\'a3\'ba
+\f0 \
+ manager.responseSerializer = [AFHTTPResponseSerializer serializer]; 
+\f1 \'d5\'e2\'be\'e4\'b4\'fa\'c2\'eb\'bd\'ab\'d2\'bb\'b8\'f6\'d0\'c2\'b5\'c4\'bd\'e2\'ce\'f6\'b6\'d4\'cf\'f3
+\f0 AFHTTPResponseSerializer
+\f1 \'b8\'b3\'d6\'b5\'b9\'fd\'c8\'a5\'a3\'ac\'ca\'fd\'be\'dd\'b2\'bb\'bb\'e1\'d4\'d9\'b1\'bb
+\f0 AFNetworking
+\f1 \'d7\'d4\'b6\'af\'bd\'e2\'ce\'f6
+\f0 \
+\cf15  manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"..."];\
+ 
+\f1 \'bf\'c9\'d2\'d4\'bd\'f8\'c8\'eb
+\f0 AFURLResponseSerialization
+\f1 \'b5\'c4
+\f0 init
+\f1 \'b7\'bd\'b7\'a8\'b2\'e9\'bf\'b4\'c6\'e4\'c4\'ac\'c8\'cf\'b8\'f1\'ca\'bd\'a3\'ba
+\f0 \
+ self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];\
+\
+ \
+ *  
+\f1 \'c8\'a1\'cf\'fb\'c8\'ce\'ce\'f1
+\f0 : [manager.operationQueue cancelAllOperations];\
+ */
+\f2\fs54 \
+\pard\tx1589\pardeftab1589\pardirnatural
+
+\fs48 \cf15 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f2\fs48 \cf15 \
+
+\f0\fs28 \cf0 \
+\pard\tx672\pardeftab672\pardirnatural
+\cf16 #import \cf17 "RootViewController.h"\cf16 \
+#import \cf17 "AFNetworking.h"\cf16 \
+#import \cf17 "ZZConenvience.h"\cf16 \
+#import \cf17 "GDataXMLNode.h"\cf16 \
+#import \cf17 "Reachability.h"\cf16 \
+\pard\tx1589\pardeftab1589\pardirnatural
+
+\f2\fs48 \cf15 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f2\fs48 \cf15 \
+\pard\tx1589\pardeftab1589\pardirnatural
+\cf15 AF Get\
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 - (\cf18 IBAction\cf0 )getJson:(\cf18 id\cf0 )sender \{\
+    \cf19 AFHTTPRequestOperationManager\cf0  *manager = [\cf19 AFHTTPRequestOperationManager\cf0  \cf20 manager\cf0 ];\
+  //  \cf20 parameters  
+\f1 \'b2\'ce\'ca\'fd
+\f0 \cf0 \
+    [manager \cf20 GET\cf0 :\cf17 @"http://iappfree.candou.com:8080/free/applications/limited?currency=rmb&page=1"\cf0  \cf20 parameters\cf0 :\cf18 nil\cf0  \cf20 success\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf18 id\cf0  responseObject) \{\
+        \cf20 NSLog\cf0 (\cf17 @"%@, result:%@"\cf0 , [responseObject \cf20 class\cf0 ], responseObject);\
+      //
+\f1 \'d4\'da\'d5\'e2\'c0\'ef\'d0\'b4\'c7\'eb\'c7\'f3\'b3\'c9\'b9\'a6\'b5\'c4\'b4\'fa\'c2\'eb\
+
+\f0 \
+    \} \cf20 failure\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf19 NSError\cf0  *error) \{\
+\
+   
+\f1 //\'d4\'da\'d5\'e2\'c0\'ef\'d0\'b4\'c7\'eb\'c7\'f3\'ca\'a7\'b0\'dc\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+    \}];\
+\}\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\pard\tx1589\pardeftab1589\pardirnatural
+
+\f2\fs48 \cf15 AF Get xml\
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 \
+- (\cf18 IBAction\cf0 )getXML:(\cf18 id\cf0 )sender \{\
+    \cf21 // 
+\f1 \'d5\'e2\'d6\'d6\'c7\'e9\'bf\'f6\'a3\'ac\'b7\'fe\'ce\'f1\'c6\'f7\'cf\'ec\'d3\'a6\'cc\'e5\'b5\'c4
+\f0 content-type
+\f1 \'ca\'c7
+\f0 text/xml\cf0 \
+    \cf19 NSString\cf0  *urlStr = \cf17 @"
+\f2\fs36 \cf22 http://act.chinaluxus.com/ios/articleHandler.ashx?type=arts&mtype=0&psize=10&catid=2&pindex=1
+\f0\fs28 \cf17 "\cf0 ;\
+    \cf19 AFHTTPRequestOperationManager\cf0  *manager = [\cf19 AFHTTPRequestOperationManager\cf0  \cf20 manager\cf0 ];\
+//
+\f1 \'c9\'e8\'d6\'c3\'b7\'b5\'bb\'d8\'b5\'c4\'ca\'fd\'be\'dd\'ce\'aa\'b6\'fe\'bd\'f8\'d6\'c6\'ca\'fd\'be\'dd
+\f0 \
+    manager.\cf20 responseSerializer\cf0  = [\cf19 AFHTTPResponseSerializer\cf0  \cf20 serializer\cf0 ];\
+\pard\tx672\pardeftab672\pardirnatural
+
+\f1 \cf0 //\'b7\'b5\'bb\'d8\'ca\'fd\'be\'dd\'b5\'c4\'c0\'e0\'d0\'cd\'ce\'aatext\'c0\'e0\'d0\'cd\'b5\'c4XML\'b8\'f1\'ca\'bd
+\f0 \
+    manager.\cf20 responseSerializer\cf0 .\cf20 acceptableContentTypes\cf0  = [\cf19 NSSet\cf0  \cf20 setWithObjects\cf0 :\cf17 @"text/xml"\cf0 , \cf18 nil\cf0 ];\
+    [manager \cf20 GET\cf0 :urlStr \cf20 parameters\cf0 :\cf18 nil\cf0  \cf20 success\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf18 id\cf0  responseObject) \{\
+        \cf21 // NSLog(@"%@, result:%@", [responseObject class], responseObject);\cf0 \
+        \cf18 if\cf0  ([responseObject \cf20 isKindOfClass\cf0 :[\cf19 NSData\cf0  \cf20 class\cf0 ]]) \{\
+//
+\f1 \'c7\'eb\'c7\'f3\'b3\'c9\'b9\'a6\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+            \cf19 GDataXMLDocument\cf0  *doc = [[\cf19 GDataXMLDocument\cf0  \cf20 alloc\cf0 ] \cf20 initWithData\cf0 :responseObject \cf20 options\cf0 :\cf20 NSUTF8StringEncoding\cf0  \cf20 error\cf0 :\cf18 nil\cf0 ];\
+            \cf19 NSString\cf0  *xPath = \cf17 @"/
+\f3\fs26 \cf23 \expnd0\expndtw0\kerning0
+\CocoaLigature1 news
+\f0\fs28 \cf17 \kerning1\expnd0\expndtw0 \CocoaLigature0 /
+\f3\fs26 \cf23 \expnd0\expndtw0\kerning0
+\CocoaLigature1 resource
+\f0\fs28 \cf17 \kerning1\expnd0\expndtw0 \CocoaLigature0 /
+\f3\fs26 \cf23 \expnd0\expndtw0\kerning0
+\CocoaLigature1 name
+\f0\fs28 \cf17 \kerning1\expnd0\expndtw0 \CocoaLigature0 "\cf0 ;\
+            \cf19 NSArray\cf0  *titleArray = [doc \cf20 nodesForXPath\cf0 :xPath \cf20 error\cf0 :\cf18 nil\cf0 ];\
+            \cf18 for\cf0  (\cf19 GDataXMLElement\cf0  *node \cf18 in\cf0  titleArray) \{\
+                \cf21 // <title>
+\f1 \'c5\'a3\'ca\'d0\'b6\'bc\'b3\'f6\'cf\'d6\'d4\'da\'be\'ad\'bc\'c3\'b7\'b1\'c8\'d9\'c6\'da\'c4\'a9\'c6\'da
+\f0  </title> 
+\f1 \'d5\'e2\'be\'cd\'ca\'c7\'d2\'bb\'b8\'f6
+\f0 GDataXMLElement
+\f1 \'b6\'d4\'cf\'f3\'a3\'ac\'d4\'aa\'cb\'d8\'a3\'ac\'bd\'da\'b5\'e3
+\f0 \cf0 \
+                \cf20 NSLog\cf0 (\cf17 @"%@"\cf0 , node.\cf20 stringValue\cf0 );\
+            \}\
+        \}\
+        \
+    \} \cf20 failure\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf19 NSError\cf0  *error) \{\
+      
+\f1 //\'c7\'eb\'c7\'f3\'ca\'a7\'b0\'dc\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+    \}];\
+\}\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f2\fs48 \cf15 \
+\pard\tx1589\pardeftab1589\pardirnatural
+\cf15 AF Post 
+\f1 \'ca\'be\'c0\'fd\'a3\'ba\'d7\'a2\'b2\'e1
+\f2 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf21 // 
+\f1 \'d7\'a2\'b2\'e1
+\f0 post\cf0 \
+\cf21 /**\
+
+\f1 \'d7\'a2\'b2\'e1\'a3\'ba
+\f0 GET/POST\
+/my/register.php\
+\
+
+\f1 \'b2\'ce\'ca\'fd
+\f0         
+\f1 \'c0\'e0\'d0\'cd
+\f0     
+\f1 \'cb\'b5\'c3\'f7
+\f0 \
+username  string		
+\f1 \'d3\'c3\'bb\'a7\'c3\'fb
+\f0 \
+password  string		
+\f1 \'c3\'dc\'c2\'eb
+\f0 \
+email     string		
+\f1 \'d3\'ca\'cf\'e4
+\f0 \
+*/\cf0 \
+- (\cf18 IBAction\cf0 )postRegister:(\cf18 id\cf0 )sender \{\
+    \cf19 NSDictionary\cf0  *dict = \cf24 @\{\cf0 \
+     \cf17 @"username"\cf0  : \cf17 @"liuweizhen180"\cf0 ,\
+     \cf17 @"password"\cf0  : \cf17 @"123456789"\cf0 ,\
+     \cf17 @"email"\cf0     : \cf17 @"1213618668@qq.com"\cf24 \}\cf0 ;\
+    \cf19 AFHTTPRequestOperationManager\cf0  *manager = [\cf19 AFHTTPRequestOperationManager\cf0  \cf20 manager\cf0 ];\
+    \cf21 // manager.responseSerializer = [AFHTTPResponseSerializer serializer];\cf0 \
+     manager.\cf20 responseSerializer\cf0 .\cf20 acceptableContentTypes\cf0  =     [\cf19 NSSet\cf0  \cf20 setWithObjects\cf0 :\cf17 @"text/html"\cf0 , \cf18 nil\cf0 ];\
+    [manager \cf20 POST\cf0 :\cf16 kRegisterUrl\cf0  \cf20 parameters\cf0 :dict \cf20 success\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf18 id\cf0  responseObject) \{\
+//
+\f1 \'c5\'d0\'b6\'cf\'ca\'c7\'b7\'f1\'d7\'a2\'b2\'e1\'b3\'c9\'b9\'a6
+\f0 \
+        \cf18 if\cf0  ([[responseObject \cf20 objectForKey\cf0 :\cf17 @"code"\cf0 ] \cf20 isEqualToString\cf0 :\cf17 @"registered"\cf0 ]) \{\
+        //
+\f1 \'d7\'a2\'b2\'e1\'b3\'c9\'b9\'a6\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+        \} \cf18 else\cf0  \{\
+            [\cf19 ZZConenvience\cf0  \cf20 showAlertView\cf0 :\cf17 @"Post
+\f1 \'b3\'c9\'b9\'a6\'a3\'ac\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'b6\'ab\'ce\'f7\'c1\'cb
+\f0 "\cf0  \cf20 message\cf0 :\cf17 @"
+\f1 \'d7\'a2\'b2\'e1\'ca\'a7\'b0\'dc
+\f0 "\cf0 ];\
+        \}\
+    \} \cf20 failure\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf19 NSError\cf0  *error) \{\
+       
+\f1 //\'d7\'a2\'b2\'e1\'ca\'a7\'b0\'dc\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+    \}];\
+\}
+\f2\fs48 \cf15 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx1589\pardeftab1589\pardirnatural
+
+\f2\fs48 \cf15 AF Post 
+\f1 \'ca\'be\'c0\'fd\'a3\'ba\'b5\'c7\'c2\'bd\
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf0 - (\cf18 IBAction\cf0 )postLogin:(\cf18 id\cf0 )sender \{\
+    \cf21 // NSDictionary *dict = @\{@"username" : @"14180001", @"password" : @"1234"\};\cf0 \
+    \cf19 NSDictionary\cf0  *dict = \cf24 @\{\cf17 @"username"\cf0  : \cf17 @"liuweizhen4"\cf0 , \cf17 @"password"\cf0  : \cf17 @"1234"\cf24 \}\cf0 ;\
+    \cf19 AFHTTPRequestOperationManager\cf0  *manager = [\cf19 AFHTTPRequestOperationManager\cf0  \cf20 manager\cf0 ];\
+    manager.\cf20 responseSerializer\cf0 .\cf20 acceptableContentTypes\cf0  = [\cf19 NSSet\cf0  \cf20 setWithObject\cf0 :\cf17 @"text/html"\cf0 ];\
+    [manager \cf20 POST\cf0 :\cf16 kLoginUrl\cf0  \cf20 parameters\cf0 :dict \cf20 success\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf18 id\cf0  responseObject) \{\
+        \cf19 NSString\cf0  *code = responseObject[\cf17 @"code"\cf0 ];\
+        \cf18 if\cf0  ([code \cf20 isEqualToString\cf0 :\cf17 @"login_success"\cf0 ]) \{\
+            \
+            \cf21 // 
+\f1 \'b5\'c7\'c2\'bd\'b3\'c9\'b9\'a6\'d6\'ae\'ba\'f3\'a3\'ac\'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'d2\'bb\'b8\'f6
+\f0 m_auth, 
+\f1 \'b4\'fa\'b1\'ed\'b8\'f6\'c8\'cb\'c6\'be\'d6\'a4
+\f0 \cf0 \
+            \cf21 // liuweizhen 123456 m_auth\cf0 \
+            \cf21 // 
+\f1 \'b7\'fe\'ce\'f1\'c6\'f7\'b7\'b5\'bb\'d8\'c4\'e3
+\f0 m_auth token(
+\f1 \'c1\'ee\'c5\'c6
+\f0 )\cf0 \
+            \cf21 // 
+\f1 \'ce\'d2\'c3\'c7\'b0\'d1\'cb\'fc\'b1\'a3\'b4\'e6\'c6\'f0\'c0\'b4\'a3\'ac\'c8\'bb\'ba\'f3\'b5\'c8\'cf\'c2\'b4\'ce\'b5\'c7\'c2\'bd\'a3\'a8\'b7\'a2\'b1\'ed\'ce\'c4\'d5\'c2\'a3\'ac\'c9\'cf\'b4\'ab\'cd\'b7\'cf\'f1\'a3\'a9\'b5\'c4\'ca\'b1\'ba\'f2\'d4\'d9\'d3\'c3
+\f0 \cf0 \
+            \cf19 NSString\cf0  *token = [responseObject \cf20 objectForKey\cf0 :\cf17 @"m_auth"\cf0 ];\
+            \cf19 NSUserDefaults\cf0  *userDefault = [\cf19 NSUserDefaults\cf0  \cf20 standardUserDefaults\cf0 ];\
+            [userDefault \cf20 setObject\cf0 :token \cf20 forKey\cf0 :\cf17 @"m_auth"\cf0 ];\
+            [userDefault \cf20 synchronize\cf0 ];\
+        \}\
+    \} \cf20 failure\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf19 NSError\cf0  *error) \{\
+    \}];\
+\}\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx1589\pardeftab1589\pardirnatural
+
+\f2\fs48 \cf15 AF Post 
+\f1 \'ca\'be\'c0\'fd\'a3\'ba\'c9\'cf\'b4\'ab\'cd\'b7\'cf\'f1
+\f2 \
+\pard\tx672\pardeftab672\pardirnatural
+
+\f0\fs28 \cf21 // 
+\f1 \'c9\'cf\'b4\'ab\'cd\'b7\'cf\'f1
+\f0 \cf0 \
+\cf21 // 
+\f1 \'ca\'d7\'cf\'c8\'d2\'aa\'b1\'a3\'d6\'a4\'d2\'d1\'be\'ad\'b5\'c7\'c2\'bd\'c1\'cb
+\f0 \cf0 \
+- (\cf18 IBAction\cf0 )uploadImage:(\cf18 id\cf0 )sender \{\
+    \cf19 NSUserDefaults\cf0  *userDefault = [\cf19 NSUserDefaults\cf0  \cf20 standardUserDefaults\cf0 ];\
+    \cf19 NSString\cf0  *token = [userDefault \cf20 objectForKey\cf0 :\cf17 @"m_auth"\cf0 ];\
+    \cf18 if\cf0  (token == \cf18 nil\cf0 ) \{\
+        \cf18 return\cf0 ;\
+    \}\
+    \cf21 // 
+\f1 \'b0\'d1\'b2\'ce\'ca\'fd
+\f0 token
+\f1 \'b4\'ab\'b9\'fd\'c8\'a5
+\f0 \cf0 \
+    \cf19 NSDictionary\cf0  *dict = \cf24 @\{\cf17 @"m_auth"\cf0  : token\cf24 \}\cf0 ;\
+    \
+    \cf21 // 
+\f1 \'b0\'d1\'c9\'cf\'b4\'ab\'b5\'c4\'cd\'b7\'cf\'f1\'ca\'fd\'be\'dd\'a3\'a8\'d7\'f7\'ce\'aa\'c7\'eb\'c7\'f3\'cc\'e5\'a3\'a9\'b4\'ab\'b9\'fd\'c8\'a5
+\f0 \cf0 \
+    \cf19 AFHTTPRequestOperationManager\cf0  *manager = [\cf19 AFHTTPRequestOperationManager\cf0  \cf20 manager\cf0 ];\
+    manager.\cf20 responseSerializer\cf0 .\cf20 acceptableContentTypes\cf0  = [\cf19 NSSet\cf0  \cf20 setWithObject\cf0 :\cf17 @"text/html"\cf0 ];\
+    [manager \cf20 POST\cf0 :\cf16 kUploadImageUrl\cf0  \cf20 parameters\cf0 :dict \cf20 constructingBodyWithBlock\cf0 :^(\cf18 id\cf0 <\cf19 AFMultipartFormData\cf0 > formData) \{\
+        \cf21 /**\
+	 *
+\f1 \'bb\'f1\'c8\'a1\'c7\'eb\'c7\'f3
+\f0 body 
+\f1 \'b5\'c4
+\f0 block\
+         * 
+\f1 \'bd\'f8\'d0\'d0\'b1\'ed\'b5\'a5\'cc\'e1\'bd\'bb\'bb\'f2\'d5\'df\'cf\'e0\'b9\'d8\'b5\'c4\'cd\'bc\'c6\'ac\'b6\'fe\'bd\'f8\'d6\'c6\'ca\'fd\'be\'dd
+\f0 \
+         */\cf0 \
+        \cf19 NSString\cf0  *imagePath = [[\cf19 NSBundle\cf0  \cf20 mainBundle\cf0 ] \cf20 pathForResource\cf0 :\cf17 @"head_image"\cf0  \cf20 ofType\cf0 :\cf17 @"png"\cf0 ];\
+        \cf19 NSURL\cf0  *fileUrl = [\cf19 NSURL\cf0  \cf20 fileURLWithPath\cf0 :imagePath];\
+        [formData \cf20 appendPartWithFileURL\cf0 :fileUrl \cf20 name\cf0 :\cf17 @"headimage"\cf0  \cf20 error\cf0 :\cf18 nil\cf0 ];\
+    \} \cf20 success\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf18 id\cf0  responseObject) \{\
+      //
+\f1 \'c9\'cf\'b4\'ab\'b3\'c9\'b9\'a6\'b5\'c4\'ca\'b1\'ba\'f2\'d6\'b4\'d0\'d0\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+    \} \cf20 failure\cf0 :^(\cf19 AFHTTPRequestOperation\cf0  *operation, \cf19 NSError\cf0  *error) \{\
+        
+\f1 //\'c9\'cf\'b4\'ab\'ca\'a7\'b0\'dc\'b5\'c4\'ca\'b1\'ba\'f2\'d6\'b4\'d0\'d0\'b5\'c4\'b4\'fa\'c2\'eb
+\f0 \
+    \}];\
+\}\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\pard\tx672\pardeftab672\pardirnatural
+
+\f1 \cf0 \'b2\'e2\'ca\'d4\'cd\'f8\'c2\'e7\'d7\'b4\'cc\'ac\'a3\'ba
+\f0 \
+- (\cf18 IBAction\cf0 )testNetwork:(\cf18 id\cf0 )sender \{\
+\pard\tx672\pardeftab672\pardirnatural
+\cf16 #if \cf24 1\cf16 \
+\pard\tx672\pardeftab672\pardirnatural
+\cf0     \cf21 /**\
+     typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) \{\
+     AFNetworkReachabilityStatusUnknown          = -1, 
+\f1 \'ce\'b4\'d6\'aa
+\f0 \
+     AFNetworkReachabilityStatusNotReachable     = 0, 
+\f1 \'ce\'de\'c1\'ac\'bd\'d3
+\f0 \
+     AFNetworkReachabilityStatusReachableViaWWAN = 1, 2/3G\
+     AFNetworkReachabilityStatusReachableViaWiFi = 2, Wifi\
+     \};\
+     */\cf0 \
+    \
+    [[\cf19 AFNetworkReachabilityManager\cf0  \cf20 sharedManager\cf0 ] \cf20 startMonitoring\cf0 ];\
+    [[\cf19 AFNetworkReachabilityManager\cf0  \cf20 sharedManager\cf0 ] \cf20 setReachabilityStatusChangeBlock\cf0 :^(\cf19 AFNetworkReachabilityStatus\cf0  status) \{\
+        \cf20 NSLog\cf0 (\cf17 @"%ld"\cf0 , status);\
+        \cf18 switch\cf0  (status) \{\
+            \cf18 case\cf0  \cf20 AFNetworkReachabilityStatusUnknown\cf0 :\
+                \cf20 NSLog\cf0 (\cf17 @"
+\f1 \'ce\'b4\'d6\'aa
+\f0 "\cf0 );\
+                \cf18 break\cf0 ;\
+            \cf18 case\cf0  \cf20 AFNetworkReachabilityStatusNotReachable\cf0 :\
+                \cf20 NSLog\cf0 (\cf17 @"
+\f1 \'ce\'de\'c1\'ac\'bd\'d3
+\f0 "\cf0 );\
+                \cf18 break\cf0 ;\
+            \cf18 case\cf0  \cf20 AFNetworkReachabilityStatusReachableViaWWAN\cf0 :\
+                \cf20 NSLog\cf0 (\cf17 @"2/3G"\cf0 );\
+                \cf18 break\cf0 ;\
+              \cf18 case\cf0  \cf20 AFNetworkReachabilityStatusReachableViaWiFi\cf0 :\
+                \cf20 NSLog\cf0 (\cf17 @"Wifi"\cf0 );\
+                \cf18 break\cf0 ;\
+            \cf18 default\cf0 :\
+                \cf18 break\cf0 ;\
+        \}\
+    \}];\
+\}\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97}

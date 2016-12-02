@@ -1,0 +1,32 @@
+//
+//  JCC.pch
+//  文怡家常菜
+//
+//  Created by qf on 16/7/5.
+//  Copyright (c) 2016年 qf. All rights reserved.
+//
+
+#ifndef ______JCC_pch
+#define ______JCC_pch
+
+#import "ViewController.h"
+#import "AFNetworking.h"
+#import "ParseManager.h"
+#import "NetWorkingManager.h"
+#import "WYModel.h"
+#import "UIKit+AFNetworking.h"
+#import "JCModel.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "CFModel.h"
+#import "UITableView+SDAutoTableViewCellHeight.h"
+#import "UIView+SDAutoLayout.h"
+#import "MBProgressHUD.h"
+#import "FMDatabase.h"
+
+
+
+//宏
+#define WIDHR [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#endif
